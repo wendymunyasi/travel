@@ -1,0 +1,46 @@
+body {
+    background-color: #333333;
+}
+
+.card {
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+
+input[type=email] {
+    background-color: #F2F2F2;
+}
+
+input[type=password] {
+    background-color: #F2F2F2;
+}
+
+
+.button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__button {
+    background-color: #FF1D58;
+    color: white;
+    width: 100%;
+    align-content: center;
+}
+
+.sign__up, .forgot__password {
+    color: #FF1D58;
+}
+
+.powered {
+    color: #B1B1B1;
+}
+
+.hng {
+    color: white;
+}

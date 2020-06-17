@@ -1,0 +1,57 @@
+body {
+    background-color: #333333;
+}
+
+.card {
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+input[type=text] {
+    background-color: #F2F2F2;
+}
+
+input[type=email] {
+    background-color: #F2F2F2;
+}
+
+input[type=password] {
+    background-color: #F2F2F2;
+}
+
+.custom-select {
+    background: #F2F2F2;
+}
+
+select:selected {
+    font-size: small;
+}
+
+.button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__button {
+    background-color: #FF1D58;
+    color: white;
+    width: 40rem;
+    align-content: center;
+}
+
+.terms,
+.login {
+    color: #FF1D58;
+}
+
+.powered {
+    color: #B1B1B1;
+}
+
+.hng {
+    color: white;
+}
