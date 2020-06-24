@@ -1,0 +1,134 @@
+/* Blog Custom Styles */
+
+
+/* Header */
+.blog-header {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.801) 0%, rgba(0, 0, 0, 0.63) 100%), url(../img/blog/blog-header.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.blog-active {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.blog-active a:hover {
+    border-bottom: none !important;
+}
+
+.blog-list-title {
+    font-style: normal;
+    color: #F2F2F2;
+    position: absolute;
+    height: 55px;
+    top: 200px;
+}
+
+.blog-list-title h1 {
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.blog-list-title p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/* Blog Body section */
+.blog-body {
+    position: relative;
+    width: 100%;
+    background: #C4C4C4;
+    padding: 30px 0px;
+}
+
+.blog-body a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.blog-body a:hover {
+    text-decoration: none;
+    color: #FF1D58;
+    transition: .5;
+}
+
+.icon-blog span {
+    font-size: 1.3rem;
+    /* margin-left: 10px; */
+}
+
+.blog-images {
+    position: relative;
+    width: 92%;
+    height: 50%;
+}
+
+.blog-btn {
+    background: #FF1D58 !important;
+    color: #F2F2F2 !important;
+}
+
+/* sidebar */
+.blog-list-group ul {
+    list-style-type: none;
+    margin: 20px 0px;
+}
+
+.blog-list-group li {
+    padding: 12px 0;
+}
+
+.blog-latest-post img {
+    width: 80px;
+    height: 76px;
+}
+
+/* Footer */
+.footer a:hover {
+    color: #FF1D58;
+    text-decoration: none;
+}
+.blog-footer {
+    color: #f2f2f2;
+}
+
+.blog-footer i {
+    color: #FF1D58;
+}
+
+.blog-icon {
+    color: #FF1D58;
+    font-size: 1.5rem;  
+}
+
+
+/* Media Queries */
+@media screen and (max-width:1199px){
+    .blog-btn-width {
+        width: 70%;
+        margin-top: 8px;
+    } 
+}
+
+@media screen and (max-width:991px){
+    .blog-list-sidebar {
+        margin-left: 6px;
+    } 
+}
+
+@media screen and (max-width:767px){
+    .blog-btn-width {
+        width: 100%;
+        margin-top: 10px;
+    } 
+}
+
+@media screen and (max-width:361px){
+    .blog-search-sidebar {
+        padding: 2px !important;
+
+    } 
+}

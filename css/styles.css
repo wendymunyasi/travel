@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --pink: #ff1d58;
+}
+
+.wrapper__page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+#mainNav {
+  background-color: #212529;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+#mainNav .navbar-brand {
+  transition: font-size 0.3s ease-in-out;
+}
+
+.signin_anchor:hover {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  position: relative;
+}
+
+.navbar-brand::after {
+  content: ".";
+  position: absolute;
+  font-size: 5rem;
+  bottom: -38px;
+  right: 63px;
+  color: var(--pink);
+}
+
+#navbarNav a {
+  color: #ffffff;
+}
+
+.dropdown-item {
+  color: #1d18187d !important;
+  text-align: left;
+  justify-content: left;
+}
+
+@media screen and (min-width: 550px) {
+  .dropdown-menu {
+    margin-left: 20px;
+  }
+}
+
+.nav-item {
+  margin: 1rem 0.9rem;
+}
+
+#navbarNav a:hover {
+  border-bottom: 0.4px solid #ffffff;
+}
+
+.navbar-dark .navbar-brand {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.brand-color {
+  color: var(--pink);
+}
+
+.btn {
+  padding: 0.5rem 2rem !important;
+}
+
+.btn-navbar {
+  background-color: var(--pink);
+}
+
+.btn-navbar:hover {
+  background-color: transparent;
+  border: 1px solid var(--pink);
+}
+
+.btn-navbar1 {
+  color: var(--pink) !important;
+}
+
+.btn-navbar1:hover {
+  border: 1px solid var(--pink);
+}
+
+#mainNav.navbar-shrink {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #212529;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#mainNav.navbar-shrink .navbar-brand {
+  font-size: 1.5em;
+}
+#mainNav.navbar-shrink .navbar-brand svg,
+#mainNav.navbar-shrink .navbar-brand img {
+  height: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  #mainNav {
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  .nav-item {
+    margin: 1rem 0.9rem;
+  }
+  .btn-navbar {
+    margin-left: 1rem;
+  }
+}
+
+/* Back to top button*/
+
+.back-to-top {
+  position: fixed;
+  color: var(--pink);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top__footer {
+  color: var(--pink);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top .backIcon,
+.back-to-top__footer .backIcon {
+  background-color: white;
+  border: 2x solid var(--pink);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.back-to-top .backIcon:hover,
+.back-to-top__footer .backIcon:hover {
+  color: white;
+  background-color: var(--pink);
+}
+
+.back-to-top:hover .backIcon,
+.back-to-top__footer:hover .backIcon {
+  color: white;
+  background-color: var(--pink);
+}
+
+.back-to-top .backIcon:active .back-to-top__footer:active {
+  color: white;
+  background-color: var(--pink);
+}
+
+.back-to-top__footer {
+  position: absolute;
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .back-to-top {
+    display: none;
+  }
+
+  .back-to-top__footer {
+    position: absolute;
+    display: block;
+  }
+}
+
+/* Back to top button*/
+
+/* Masthead */
+.masthead {
+  background-image: url("/img/background.jpg");
+  width: 100%;
+  height: 655px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  position: relative;
+}
+
+.masthead-heading {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  font-family: "Caveat", cursive;
+}
+
+.masthead-text {
+  line-height: 1;
+  font-size: 4rem;
+}
+
+/* Form */
+.masthead-form {
+  background-color: #333333;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  padding: 0;
+}
+
+.masthead-form label {
+  color: white;
+  margin-top: 1rem;
+}
+
+.icon__container {
+  position: relative;
+}
+
+.masthead-form form {
+  padding: 2rem 2rem;
+}
+
+.icon__img {
+  position: absolute;
+  left: 13px;
+  bottom: -38px;
+  color: var(--pink);
+}
+
+.masthead-form select::-ms-expand {
+  display: none;
+}
+
+.masthead-form select {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--pink) 50%),
+    linear-gradient(135deg, var(--pink) 50%, transparent 50%);
+
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.masthead-form option {
+  margin-left: 2rem;
+}
+
+.send-button {
+  background-color: var(--pink);
+  border: 2px solid var(--pink);
+  color: white;
+  padding: 0.9rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.send-button:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid var(--pink);
+  color: var(--pink);
+}
+
+@media screen and (min-width: 992px) {
+  .masthead-heading {
+    font-size: 3rem;
+  }
+
+  .masthead-form {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+}
+
+/* Lasting Memories*/
+.memories {
+  margin: 13rem 0 0;
+}
+
+.memories .card {
+  border: none;
+}
+
+.memories .card-title {
+  font-size: 2rem;
+}
+
+.memories .card__text {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.memories__img {
+  width: 100%;
+}
+
+.memories__btn {
+  background-color: var(--pink);
+  color: white;
+  font-weight: 700;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  border: 2px solid var(--pink);
+}
+
+.memories__btn:hover {
+  background-color: transparent;
+  color: #333333;
+  border: 2px solid var(--pink);
+}
+
+.card__text {
+  padding: 3rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .memories {
+    margin: 2rem 0 6rem 0;
+  }
+}
+
+/* Destinations Gallery */
+.destinations__gallery {
+  column-count: 2;
+  column-gap: 20px;
+  row-gap: 1rem;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.image__container {
+  margin: 0 0 0px 0;
+  display: block;
+  object-fit: contain;
+  position: relative;
+}
+.image__container-full {
+  object-fit: contain;
+  position: relative;
+}
+
+.destinations__text {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color: white;
+  background-color: #33333396;
+  width: 100%;
+  z-index: 2;
+}
+
+.image__container img,
+.image__container-full img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .destinations__gallery {
+    column-count: 1;
+  }
+  .image__container-full {
+    margin-top: 1rem;
+  }
+}
+
+/* Destinations */
+
+/* NewsLetter */
+.newsletter {
+  background-image: url("../img/newsletters.png");
+  background-position: center center;
+  background-size: contain;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.newsletter:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(68, 67, 67, 0.336);
+}
+
+.newsletter__button {
+  background-color: var(--pink);
+  color: white;
+  font-weight: 700;
+}
+
+.newsletter__button:hover {
+  background-color: rgba(68, 67, 67, 0.336);
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  font-weight: 700;
+}
+
+.newsletter__content h2 {
+  color: white;
+  font-weight: 700;
+}
+
+.newsletter__content p {
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.newsletter__input input {
+  padding: 1.7rem 1rem;
+  margin-right: 1.5rem;
+}
+/* NewsLetter */
+
+/*Featured Tours*/
+
+.tours__text {
+  font-size: 1.2rem;
+  width: 85%;
+}
+
+.tours__gallery {
+  column-count: 3;
+  column-gap: 20px;
+  row-gap: 1rem;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.tours__image {
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.tours__image img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.tours__image:hover img {
+  transform: scale(1.2);
+}
+
+.tours__price {
+  position: absolute;
+  bottom: 0;
+  background: #f2f2f27c;
+  width: 100%;
+  padding: 0.8rem;
+  color: #333333;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.tours__name {
+  position: absolute;
+  top: 7%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Caveat", cursive;
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .tours__gallery {
+    column-count: 1;
+  }
+}
+/*Featured Tours*/
+
+/* Clients */
+.swiper__background {
+  background-image: url("../img/clients/backgroundClients.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0;
+}
+
+.swiper__background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(68, 67, 67, 0.336);
+}
+
+.swiper__item {
+  color: #ffffff;
+}
+
+.swiper__icon {
+  color: var(--pink);
+}
+
+.swiper__arrow {
+  font-size: 4rem;
+}
+.swiper__arrow:hover {
+  color: var(--pink);
+}
+
+.swiper__score {
+  font-size: 1.5rem;
+  color: var(--pink);
+}
+
+.score__number {
+  color: #ffffff;
+}
+
+/* Clients */
+
+/*footer */
+.footer {
+  background-color: #333333;
+  position: relative;
+}
+
+.footer__logo p {
+  color: #ffffff;
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  position: relative;
+}
+
+.footer__logo p span {
+  position: relative;
+}
+
+.footer__logo p span::after {
+  content: ".";
+  position: absolute;
+  font-size: 5rem;
+  bottom: -45px;
+  right: 63px;
+  color: var(--pink);
+}
+
+.footers__lists {
+  text-align: left;
+}
+
+.footers__lists a,
+.footers__lists li {
+  color: white;
+}
+
+.footers__lists ul {
+  list-style-type: none;
+}
+
+.footers__lists li {
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.footer__icon {
+  position: absolute;
+  left: -30px;
+  color: var(--pink);
+}
+
+.footer__social {
+  color: #f2f2f2ad;
+  text-align: center;
+}
+
+.footer__socialIcons a {
+  color: var(--pink);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer__socialIcons a:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+  .footers__lists {
+    text-align: center;
+  }
+
+  .footer__icon {
+    position: inherit;
+    margin-right: 0rem;
+  }
+}
+/*footer */

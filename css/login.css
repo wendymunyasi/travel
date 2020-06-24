@@ -1,46 +1,74 @@
 body {
-    background-color: #333333;
+	background-color: #333333;
+	display: block;
+	height: fit-content;
+}
+
+.container-fluid {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	min-height: 80%;
+	min-height: 80vh;
 }
 
 .card {
-    border-radius: 2rem;
-    margin-bottom: 10rem;
-    margin-top: 8rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+	border-radius: 2rem;
+	width: 507px;
+	height: 100%;
+	font-size: small;
+	margin-left: .9px;
 }
 
+::placeholder {
+	font-size: small;
+}
+
+h1 {
+	font-weight: 600;
+}
 
 input[type=email] {
-    background-color: #F2F2F2;
+	background-color: #F2F2F2;
+	height: 2rem;
 }
 
 input[type=password] {
-    background-color: #F2F2F2;
+	background-color: #F2F2F2;
+	height: 2rem;
 }
 
+input[type=checkbox] {
+	height: 1.2rem;
+	width: 1.2rem;
+}
 
 .button-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .login__button {
-    background-color: #FF1D58;
-    color: white;
-    width: 100%;
-    align-content: center;
+	background-color: #FF1D58;
+	color: white;
+	width: 100%;
+	align-content: center;
 }
 
-.sign__up, .forgot__password {
-    color: #FF1D58;
+.sign__up,
+.forgot__password {
+	color: #FF1D58;
 }
 
 .powered {
-    color: #B1B1B1;
+	color: #B1B1B1;
+	margin-top: 3rem;
 }
 
 .hng {
-    color: white;
+	color: white;
+
 }

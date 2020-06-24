@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  :root {
+    --pink: #ff1d58;
+  }
+  
+  /* Hero */
+  .banner__hero {
+    background-image: url("/img/about/hero-pic.png");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    max-width: 1440px;
+  }
+  
+  .banner__hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-color: rgba(27, 8, 95, 0.336);
+    max-width: 1440px;
+      margin: 0 auto;
+  }
+  
+  .banner__title {
+    color: white;
+    position: relative;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .banner__sub_title {
+    color: white;
+    position: relative;
+    font-family: Raleway;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 650px) {
+    .banner__sub_title {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+  }
+
+  @media screen and (min-width: 650px) {
+    .banner__title {
+      font-size: 4rem;
+    }
+  }
+  /* Hero */
+
+
+/* footer */
+.footer__form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+   .footer__subscribeInfo{
+       width: 40%;
+   }
+  
+  
+  
+  .footer__buttonSubs{
+      background-color: var(--pink);
+      color: #ffffff;
+  }
+  
+  .form__subsbutton{
+      color: white;
+      background-color: var(--pink);
+  }
+  
+  @media screen and (max-width: 991px){
+      .footer__form{
+          flex-direction: column;
+          text-align: center;
+      }
+      .footer__subscribeInfo{
+          width: 100%;
+          margin-bottom: 2rem;
+      }
+  }
+  
+  /* footer */
+  /* services */
+
+  .services__section {
+      margin-top: 75px;
+  }
+
+  .service__element {
+      background: #FFFCFC;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      padding: 10px;
+  }
+
+  @media screen and (max-width: 550px){
+    .service__element{
+        margin: 0px 0px 20px 0px;
+        padding: 10px;
+        height: 242px;
+    }
+  }
+
+  .service__title {
+    padding: 5px 0px 10px 0px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  .service__caption {
+    color: #444444;
+    font-size: 12px;
+  }
+
+  .row {
+    padding: 0px 15px 0px 15px;
+  }
+  /* services */
+
+  /* history */
+  .history__section {
+    margin-top: 120px;
+  }
+  .video__iframe {
+    height: 376px;
+    width: 100%;
+  }
+  .history__text {
+    font-family: Raleway;
+    font-style: normal;
+    display: table;
+    height: 376px;
+  }
+  .history_text__wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .history__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .history__caption {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .history__tag {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FF1D58;
+  }
+  /* history */
+
+  /* team */
+  .team__section {
+    display: table;
+    margin-top: 120px;
+  }
+
+  .team__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .team__element {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: 333px;
+    height: 304px;
+    margin: 10px;
+    height: 260px;
+  }
+
+  @media screen and (max-width: 550px){
+    .team__element{
+        margin: 0px 0px 50px 0px;
+        height: 242px;
+        display: table;
+        width: -webkit-fill-available;
+    }
+  }
+
+  @media screen and (min-width: 550px) {
+    .members__row_one {
+        margin: 0px 0px 75px 0px;
+    }
+    .members__row_two {
+      margin: 0px 0px 100px 0px;
+    }
+  }
+
+  .member__position {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 131%;
+    color: #FF1D58;
+    text-align: right;
+    padding: 10px;
+  }
+
+  .member__name {
+    background: #FF1D58;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+  }
+  
+  .question__element {
+    text-align: center;
+    display: table;
+    height: 290px;
+    padding: 20px;
+  }
+  
+  .question__title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  .question__wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .icon__wrap {
+    float: right;
+    background: #a7153b42;
+  }
+
+  .plus__icon {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  /* team */
+

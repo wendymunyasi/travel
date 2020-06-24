@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --pink: #ff1d58;
+}
+
+/* Hero */
+.destinations__hero {
+  background-image: url("/img/destinationsHero.png");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  max-width: 1440px;
+}
+
+.destinations__hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  background-color: rgba(27, 8, 95, 0.336);
+  max-width: 1440px;
+    margin: 0 auto;
+}
+
+.destinations__title {
+  color: white;
+  position: relative;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 650px) {
+  .destinations__title {
+    font-size: 4rem;
+  } 
+}
+
+/* Hero */
+
+/*Find a destination*/
+.find {
+  margin-top: 4rem;
+}
+
+.find__form {
+  background-color: #0b203f;
+  color: #ffffff;
+  padding: 2.5rem 1rem 2rem 1rem;
+}
+
+.find__form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.find__form input {
+  padding: 0.5rem 1rem;
+}
+
+.find__form select {
+  padding: 0.5rem 0rem;
+}
+
+.find__subtitle {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.find__form select {
+  border: none;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, var(--pink), var(--pink));
+  background-position: calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 10px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2em 2.5em;
+  background-repeat: no-repeat;
+}
+
+.find__button {
+  background-color: var(--pink);
+  border: 2px solid var(--pink);
+  color: #ffffff;
+  padding: 0.9rem;
+  border-radius: 0;
+  font-weight: 400;
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1rem 0rem !important;
+}
+
+.find__button:hover {
+  background-color: #0b203f;
+  color: #ffffff;
+}
+
+.find__image {
+  max-height: 619px;
+  min-height: 619px;
+  background-image: url("../img/destinations/eiffelTower.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.find__score {
+  position: relative;
+  top: 0;
+  color: var(--pink);
+}
+
+.find__stars,
+.find__likes {
+  font-size: 1.3rem;
+}
+
+.find__tag {
+  transform: rotate(90deg);
+}
+
+.find__textContainer {
+  padding: 1rem;
+  background-color: #22517b75;
+  margin-right: 0;
+  height: 100%;
+}
+
+.find__textContainer h2 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.find__textContainer p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0 1rem 1rem;
+}
+
+.find__button2 {
+  color: white;
+  background: var(--pink);
+  border: 2px solid var(--pink);
+}
+
+.find__button2:hover {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid var(--pink);
+}
+
+.find__video {
+  border: 3px solid #ffff;
+}
+
+.video__icon {
+  color: white;
+  font-size: 3rem;
+}
+
+.video__icon:hover {
+  color: var(--pink);
+}
+
+@media screen and (max-width: 1200px) {
+  .find__textContainer {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .find__image {
+    max-height: inherit;
+  }
+
+  .find__firstColumn {
+    padding: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .find__score {
+    text-align: center;
+  }
+
+  .background__color {
+    background-color: #22517b75;
+  }
+
+  .find__textContainer {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 7rem;
+  }
+}
+
+/*Find a destination*/
+
+/*Top destinations */
+.topDest__title a {
+  color: #333333;
+  text-decoration: none;
+}
+.topDest__title a:hover {
+  color: var(--pink);
+}
+
+.topDest__arrow {
+  color: var(--pink);
+}
+
+.topDest__image {
+  margin: 0 0 0px 0;
+  display: block;
+  object-fit: contain;
+  position: relative;
+  overflow: hidden;
+}
+
+.topDest__image img {
+  width: 100%;
+}
+
+.topDest__image-full {
+  object-fit: contain;
+  position: relative;
+}
+
+.topDest__image {
+    position: relative;
+}
+
+.topDest__names{
+    color: #333333;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.topDest__names2{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.topDest__countries, .topDest__china {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem 1rem 0 0 ;
+}
+
+.topDest__brazil{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0rem 0rem 1rem 1rem;
+}
+
+.topDest_navigation .page-item.active .page-link{
+    color: white;
+    background-color: var(--pink);
+}
+
+
+.topDest__link{
+    border: none;
+    font-size: 2rem;
+    color: #333333;
+}
+
+.topDest__link:hover{
+    background-color: var(--pink);
+    color: #ffffff;
+}
+/*Top destinations */
+
+
+/* footer */
+.footer__form{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+ .footer__subscribeInfo{
+     width: 40%;
+ }
+
+
+
+.footer__buttonSubs{
+    background-color: var(--pink);
+    color: #ffffff;
+}
+
+.form__subsbutton{
+    color: white;
+    background-color: var(--pink);
+}
+
+@media screen and (max-width: 991px){
+    .footer__form{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__subscribeInfo{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* footer */

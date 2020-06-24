@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  :root {
+    --pink: #ff1d58;
+  }
+  
+  /* Hero */
+  .banner__hero {
+    background-image: url("/img/destinationsHero.png");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    max-width: 1440px;
+  }
+  
+  .banner__hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-color: rgba(27, 8, 95, 0.336);
+    max-width: 1440px;
+      margin: 0 auto;
+  }
+  
+  .banner__title {
+    color: white;
+    position: relative;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .banner__sub_title {
+    color: white;
+    position: relative;
+    font-size: 1rem;
+  }
+  
+  @media screen and (min-width: 650px) {
+    .banner__title {
+      font-size: 4rem;
+    }
+  }
+  /* Hero */
+
+
+/* footer */
+.footer__form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+   .footer__subscribeInfo{
+       width: 40%;
+   }
+  
+  
+  
+  .footer__buttonSubs{
+      background-color: var(--pink);
+      color: #ffffff;
+  }
+  
+  .form__subsbutton{
+      color: white;
+      background-color: var(--pink);
+  }
+  
+  @media screen and (max-width: 991px){
+      .footer__form{
+          flex-direction: column;
+          text-align: center;
+      }
+      .footer__subscribeInfo{
+          width: 100%;
+          margin-bottom: 2rem;
+      }
+  }
+  
+  /* footer */

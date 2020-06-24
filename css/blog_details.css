@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background-color: #F2F2F2;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --pink: #ff1d58;
+}
+
+.card,
+.card-header {
+  background-color: #F2F2F2;
+  border: none;
+}
+
+/* Hero */
+.banner__hero {
+  background-image: url("../img/blog-details/guys.png");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  max-width: 1440px;
+}
+
+.banner__hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  background-color: rgba(27, 8, 95, 0.336);
+  max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner__title {
+  color: white;
+  position: relative;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+.banner__sub_title {
+  color: white;
+  position: relative;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 650px) {
+  .destinations__title {
+    font-size: 4rem;
+  }
+}
+
+.footer__form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+   .footer__subscribeInfo{
+       width: 40%;
+   }
+  
+  .footer__buttonSubs{
+      background-color: var(--pink);
+      color: #ffffff;
+  }
+  
+  .form__subsbutton{
+      color: white;
+      background-color: var(--pink);
+  }
+  
+  @media screen and (max-width: 991px){
+      .footer__form{
+          flex-direction: column;
+          text-align: center;
+      }
+      .footer__subscribeInfo{
+          width: 100%;
+          margin-bottom: 2rem;
+      }
+  }
+  
+
+
+/* start of solo travellers section styles */
+
+.solo__travellers {
+  width: 50rem;
+  height: 3.5rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+}
+
+.travellers__image img {
+  width: 100%;
+}
+
+/* end of solo travellers section styles */
+
+/* start of first column/social media column styles */
+
+.first__column__details {
+  width: 10.35%;
+  height: 50%;
+}
+
+.first__column__details .card {
+  background-color: #333333;
+}
+
+.iconify {
+  height: 40px;
+  width: 40px;
+  margin-top: 3rem;
+  color: #F2F2F2;
+}
+
+/* end of first column/social media column styles*/
+
+/* start of second column/writings styles*/
+
+.second__column__details {
+  width: 47.3%;
+  font-size: 18px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+  align-items: center;
+  text-align: justify;
+  color: #333333;
+}
+
+.tower {
+  height: 100%;
+}
+
+.leave__comment {
+  width: 173px;
+  height: 50px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #333333;
+}
+
+textarea {
+  width: 100%;
+  height: 131px;
+}
+
+.btn {
+  background-color: #FF1D58;
+  width: 149px;
+  height: 37px;
+  color: white;
+  display: block;
+}
+
+/* end of second column/writings styles*/
+
+/* start of third column/other details and others styles */
+
+.third__column__details {
+  width: 42.35%;
+  align-items: center;
+  height: 100%;
+}
+
+.jacob {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+}
+
+.editor {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+}
+
+.about__author {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+}
+
+.author__details {
+  width: 134.85px;
+  height: 118px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: justify;
+  color: #000000;
+  margin-bottom: 5.5rem;
+}
+
+.nature__card {
+  margin-bottom: 3rem;
+}
+
+.ways__to__travel {
+  text-align: center;
+  font-family: Raleway;
+  align-items: center;
+  color: #000000;
+}
+
+.travel__tips {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: justify;
+  color: #000000;
+}
+
+/* end of third column/other details and others styles */
+
+/* start of media queries */
+
+@media only screen and (max-width: 1024px) and (min-width:600px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  #mainNav {
+    width: 100vw;
+  }
+  
+
+  /* start of banner styles */
+
+  .banner__title {
+    margin-top: 10rem;
+  }
+
+  /* end of banner styles */
+
+  /* start of solo travellers section styles */
+
+  .solo__travellers {
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+
+  /* end of solo travellers section styles */
+
+  /* start of first column/social media column styles */
+
+  .first__column__details {
+    display: none;
+  }
+
+  .iconify {
+    height: 20px;
+    width: 20px;
+    margin-top: 1rem;
+  }
+
+  /* end of first column/social media column styles */
+
+  /* start of second column/writings styles */
+
+  .second__column__details {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .tower__img img {
+    height: 100%;
+  }
+
+  .leave__comment {
+    width: 10rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-top: 0%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .btn-sm {
+    width: 150px;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  /* end of of second column/writings */
+
+  /* start of third column/author details and others styles */
+
+  .third__column__details {
+    width: 100vw;
+    padding-right: 0%;
+  }
+
+  .jacob {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .editor {
+    font-size: small;
+    line-height: 15px;
+  }
+
+  .about__author {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .author__details {
+    width: 9rem;
+    height: 5rem;
+    font-size: small;
+    line-height: 15px;
+  }
+
+  .nature__card {
+    padding-right: 0%!important;
+  }
+
+  .ways__to__travel__images img {
+    margin-bottom: 1rem;
+  }
+
+  .ways__to__travel {
+    font-size: .7rem;
+  }
+
+  .travel__tips {
+    line-height: 15px;
+    font-size: 8px;
+    display: none;
+  }
+
+  .building__card {
+    margin-top: 2rem;
+  }
+
+  /* end of third column/author details and others styles */
+}
+
+@media only screen and (max-width: 600px) {
+
+  
+
+/* *{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  }
+   */
+  
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  #mainNav {
+    width: 100vw;
+  }
+
+
+  /* start of overall styles */
+  .card {
+    width: 100vw;
+  }
+
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* end of overall styles */
+  
+  /* start of banner styles */
+
+  .banner__title {
+    margin-top: 10rem;
+  }
+
+  /* end of banner styles */
+
+  /* start of solo travellers section styles */
+
+  .solo__travellers {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+
+  /* end of solo travellers section styles */
+
+  /* start of first column/social media column styles */
+
+  .first__column__details__card {
+    min-width: 1.25rem;
+    display: none;
+  }
+
+  .second__column__details {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding-left: 1px;
+    padding-right: 0;
+  }
+
+  .second__column__details__one {
+    width: 100vw;
+  }
+
+  .tower__img {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .tower__img img {
+    height: 10rem;
+  }
+
+  .tower__img__text {
+    padding-right: 2rem;
+  }
+
+  .tower__img__text, .one__paragraph__card {
+    width: 100vw;
+  }  
+  
+  .leave__comment {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: #333333;
+    margin: 0;
+  }
+
+  textarea {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .btn-sm {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  /* end of first column/social media column styles */
+
+  /* start of third column/author details and others styles */
+
+  .human {
+    width: 120px;
+    height: auto;
+  }
+
+  .jacob {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    align-items: center;
+  }
+
+  .editor {
+    font-size: .7rem;
+    line-height: 1.3rem;
+  }
+
+  .about__author {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding-bottom: 0;
+    margin-bottom: .2rem;
+  }
+
+  .author__details {
+    width: 16rem;
+    height: 3rem;
+    font-size: .7rem;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+  }
+
+  .ways__to__travel__images, .ways__to__travel__texts {
+    text-align: center;
+  }
+
+  .ways__to__travel__images {
+    margin-bottom: 1rem;
+  }
+
+  .ways__to__travel {
+    font-size: 1rem;
+    line-height: 0px;
+  }
+
+  .travel__tips {
+    font-size: .7rem;
+    line-height: 5px;
+    text-align: center;
+  }
+
+  .building__card {
+    display: none;
+  }
+
+  .building__img {
+    width: 7rem;
+    margin-bottom: 1rem;
+  }
+  
+}
+
+/* end of media queries */
