@@ -77,5 +77,5 @@ This project is licensed under the MIT License.
 ## Sample Screenshot of a Part of the landing page
 
 <div style="text-align:center">
-    <img src="./img/landing_page.jpg">
+    <img src="./img/sample_landing.png">
 </div>
