@@ -57,7 +57,7 @@ This project is licensed under the MIT License.
 
 1. git clone using the following links.
 
-   link: https://github.com/hngi/project_envato-Team-Fury-Travel.git
+   link: https://github.com/wendymunyasi/travel.git
 
 2. Naviagte to the `project_envato-Team-Fury-Travel` directory.
 3. Open the file `index.html` to view the app on your browser.
